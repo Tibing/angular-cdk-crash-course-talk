@@ -1,1 +1,9 @@
-<p>overlays-demo works!</p>
+<button mat-button (click)="show()">Show dialog!</button>
+
+<ng-template #dialog>
+  <div class="dialog">
+    I'm a dialog!
+
+    <button mat-raised-button (click)="close()">Close it</button>
+  </div>
+</ng-template>

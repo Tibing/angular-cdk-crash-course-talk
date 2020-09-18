@@ -14,6 +14,9 @@ import { HomeComponent } from './home/home.component';
 import { ReorderingListsComponent } from './reordering-lists/reordering-lists.component';
 import { TransferBetweenListsComponent } from './transfer-between-lists/transfer-between-lists.component';
 import { CustomizingDragDropComponent } from './customizing-drag-drop/customizing-drag-drop.component';
+import { OverlayModule } from '@angular/cdk/overlay';
+import { MatButtonModule } from '@angular/material/button';
+import { TooltipDemoComponent } from './tooltip-demo/tooltip-demo.component';
 
 
 export const routes: Routes = [
@@ -34,6 +37,7 @@ export const routes: Routes = [
     ReorderingListsComponent,
     TransferBetweenListsComponent,
     CustomizingDragDropComponent,
+    TooltipDemoComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +45,8 @@ export const routes: Routes = [
     MatListModule,
     RouterModule.forRoot(routes),
     DragDropModule,
+    OverlayModule,
+    MatButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

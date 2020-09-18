@@ -6,6 +6,7 @@ import { TableDemoComponent } from './table-demo/table-demo.component';
 import { ReorderingListsComponent } from './reordering-lists/reordering-lists.component';
 import { TransferBetweenListsComponent } from './transfer-between-lists/transfer-between-lists.component';
 import { CustomizingDragDropComponent } from './customizing-drag-drop/customizing-drag-drop.component';
+import { TooltipDemoComponent } from './tooltip-demo/tooltip-demo.component';
 
 
 export const componentsRoutes: Routes = [
@@ -41,7 +42,14 @@ export const componentsRoutes: Routes = [
     path: 'overlays-demo',
     component: OverlaysDemoComponent,
     data: {
-      title: 'Overlays Demo',
+      title: '5. Dialog Demo',
+    },
+  },
+  {
+    path: 'tooltip-demo',
+    component: TooltipDemoComponent,
+    data: {
+      title: '6. Tooltip Demo',
     },
   },
   {
