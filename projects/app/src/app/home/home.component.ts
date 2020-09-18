@@ -16,8 +16,8 @@ import { componentsRoutes } from '../routes';
       }
 
       .mat-list-item {
-        font-size: 40px;
-        margin-bottom: 1rem;
+        font-size: 32px;
+        margin-bottom: 0.5rem;
       }
 
       a {
