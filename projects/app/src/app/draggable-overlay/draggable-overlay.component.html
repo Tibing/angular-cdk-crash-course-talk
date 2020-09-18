@@ -1,1 +1,8 @@
-<p>draggable-overlay works!</p>
+<button mat-button (click)="show()">Show dialog!</button>
+
+<ng-template #dialog>
+  <div class="example-box" cdkDrag>
+    Drag me around
+    <button mat-raised-button (click)="close()">Close it</button>
+  </div>
+</ng-template>
