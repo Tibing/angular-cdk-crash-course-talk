@@ -17,6 +17,10 @@ import { CustomizingDragDropComponent } from './customizing-drag-drop/customizin
 import { OverlayModule } from '@angular/cdk/overlay';
 import { MatButtonModule } from '@angular/material/button';
 import { TooltipDemoComponent } from './tooltip-demo/tooltip-demo.component';
+import { CdkTableModule } from '@angular/cdk/table';
+import { TableDatasourceDemoComponent } from './table-datasource-demo/table-datasource-demo.component';
+import { DraggableTableComponent } from './draggable-table/draggable-table.component';
+import { DraggableOverlayComponent } from './draggable-overlay/draggable-overlay.component';
 
 
 export const routes: Routes = [
@@ -38,6 +42,9 @@ export const routes: Routes = [
     TransferBetweenListsComponent,
     CustomizingDragDropComponent,
     TooltipDemoComponent,
+    TableDatasourceDemoComponent,
+    DraggableTableComponent,
+    DraggableOverlayComponent,
   ],
   imports: [
     BrowserModule,
@@ -47,6 +54,7 @@ export const routes: Routes = [
     DragDropModule,
     OverlayModule,
     MatButtonModule,
+    CdkTableModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

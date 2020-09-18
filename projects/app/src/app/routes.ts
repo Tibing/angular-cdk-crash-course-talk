@@ -7,6 +7,9 @@ import { ReorderingListsComponent } from './reordering-lists/reordering-lists.co
 import { TransferBetweenListsComponent } from './transfer-between-lists/transfer-between-lists.component';
 import { CustomizingDragDropComponent } from './customizing-drag-drop/customizing-drag-drop.component';
 import { TooltipDemoComponent } from './tooltip-demo/tooltip-demo.component';
+import { TableDatasourceDemoComponent } from './table-datasource-demo/table-datasource-demo.component';
+import { DraggableTableComponent } from './draggable-table/draggable-table.component';
+import { DraggableOverlayComponent } from './draggable-overlay/draggable-overlay.component';
 
 
 export const componentsRoutes: Routes = [
@@ -56,7 +59,28 @@ export const componentsRoutes: Routes = [
     path: 'table-demo',
     component: TableDemoComponent,
     data: {
-      title: 'Table Demo',
+      title: '7. Table Demo',
+    },
+  },
+  {
+    path: 'table-datasource-demo',
+    component: TableDatasourceDemoComponent,
+    data: {
+      title: '8. Table Datasource Demo',
+    },
+  },
+  {
+    path: 'draggable-table-demo',
+    component: DraggableTableComponent,
+    data: {
+      title: '9. Draggable Table Demo',
+    },
+  },
+  {
+    path: 'draggable-overlay-demo',
+    component: DraggableOverlayComponent,
+    data: {
+      title: '10. Draggable Overlay Demo',
     },
   },
 ];
